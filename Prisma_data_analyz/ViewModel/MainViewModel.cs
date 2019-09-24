@@ -21,6 +21,7 @@ namespace Prisma_data_analyz.ViewModel
         /// </summary>
         public MainViewModel()
         {
+            this.ToString();
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.
