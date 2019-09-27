@@ -35,7 +35,7 @@
                 <PasswordBox Margin="0,10" materialDesign:HintAssist.Hint="PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </StackPanel>
         </Grid>
-        <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="LOGIN"/>
+        <Button MouseLeftButtonDown="Button_MouseLeftButtonDown" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="LOGIN" Click="Button_Click"/>
         <TextBlock Text="Power Tech" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand"/>
         <Image Source="Assets/home.png" Width="100" Height="100" VerticalAlignment="Top" Margin="30"/>
     </Grid>

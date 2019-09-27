@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,29 @@ namespace Login2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+         
+
+        }
+        protected string ExecuteInterfaceByUrl(string url, FormUrlEncodedContent para=null)
+        {
+            var handler = new HttpClientHandler() { AutomaticDecompression = DecompressionMethods.GZip };
+
+            using (var http = new HttpClient(handler))
+            {
+                var responseRpt = http.GetAsync(url).Result;
+                var resultRpt = responseRpt.Content.ReadAsStringAsync().Result;
+
+                return resultRpt;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine(ExecuteInterfaceByUrl(@"https://localhost:44383/api/Todo"));
         }
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login2", "Login2\Login2.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prisma_data_analyz", "Prisma_data_analyz\Prisma_data_analyz.csproj", "{009CA1EF-1485-419F-A787-4D48D6F942E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{FF4FD90B-E070-4CA5-BB8E-58A22F0A218C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{009CA1EF-1485-419F-A787-4D48D6F942E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009CA1EF-1485-419F-A787-4D48D6F942E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009CA1EF-1485-419F-A787-4D48D6F942E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4FD90B-E070-4CA5-BB8E-58A22F0A218C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4FD90B-E070-4CA5-BB8E-58A22F0A218C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4FD90B-E070-4CA5-BB8E-58A22F0A218C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4FD90B-E070-4CA5-BB8E-58A22F0A218C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
